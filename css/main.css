@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Roboto:ital,wght@0,100;1,400&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nova Square';
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: #1d1a1a;
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+
+h2 {
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media(min-width: 56.3rem) {
+  h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+li {
+  list-style: square;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media(min-width: 56.3rem) {
+  .form {
+    margin-top: 6rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+#startArea {
+  /* display: none */
+}
+
+form label {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: blueviolet;
+  width: 15rem;
+}
+
+div.divCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.changeFont {
+  font-size: 1.3rem;
+  width: 100%;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+@media(min-width: 56.3rem) {
+  .changeFont {
+    width: 15rem;
+  }
+}
+
+.startButtonDiv {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 2rem;
+  color: white;
+  background-color: blueviolet;
+  margin-bottom: 0.5rem;
+}
+
+@media(min-width: 40rem) {
+  .btn {
+    width: 8rem;
+  }
+}
+
+.start-btn {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+  margin-top: 3rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media(min-width: 56.3rem) {
+  .start-btn {
+    margin-top: 9rem;
+    width: 18rem
+  }
+}
+
+.btn:hover {
+  background-color: white;
+  color: #1d1a1a;
+}
+
+#timer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-center {
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+@media(min-width: 42.3rem) {
+  .text-center {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+}
+
+.displayArea {
+  display: none;
+  margin-top: 4rem
+}
+
+.timer__text {
+  margin-right: 0.5rem;
+  color: blueviolet;
+}
+
+.blueviolet {
+  color: blueviolet;
+  font-size: 3rem;
+}
+
+.control-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media(min-width: 40rem) {
+  .control-btn {
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+}
+
+.widerBtn {
+  width: 100%;
+}
+
+@media(min-width: 42.3rem) {
+  .widerBtn {
+    width: 13rem;
+  }
+}
+
+.endOfGame {
+  display: none;
+}
+
+.endOfGame * {
+  margin: 0 auto;
+}
+
+.answerBtn {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+
+}
+
+.answerBtn:hover {
+  color: white;
+  background-color: #6015a7;
+  outline: none;
+}
+
+/* Adding Toggle Between Buttons */
+.answerBtn:active,
+.answerBtn:focus {
+  color: white;
+  background-color: #6015a7;
+  outline: none;
+}
+
+
+.js__content {
+  margin: 2rem 0 1rem;
+}
+
+.control-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+#timer h4 {
+  /* display: inline-block; */
+}
+
+.displayArea__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline
+}
+
+.quizQuestion {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.changeColour {
+  color: #6015a7;
+}
+
+.gameReview {
+  margin-top: 2rem;
+}
+
+.gameReview li {
+  padding-bottom: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.startAgain {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.score h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+svg {
+  width: 10rem;
+  fill: rgb(255, 196, 0);
+}
+
+.trophy {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(min-width: 42.3rem) {
+  svg {
+    width: 15rem;
+  }
+}
+
+/* margin-top: 2rem;   width: 13rem;*/
+#pageBeginCountdownText {
+  color: #fff;
+}
+
+/* .hidden {
+  display: none;
+} */
